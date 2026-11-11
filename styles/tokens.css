@@ -1,0 +1,168 @@
+:root {
+  color-scheme: light dark;
+
+  --font-sans: Inter, "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-2xl: 32px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --control-height: 40px;
+  --header-height: 76px;
+  --page-max: 1580px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 160ms;
+  --duration-med: 260ms;
+  --duration-slow: 420ms;
+
+  /* Warm editorial matte surfaces (inspired by reference bento UI) */
+  --bg: #eceae4;
+  --shell: #faf9f6;
+  --surface: #ffffff;
+  --surface-2: #f3f1ec;
+  --surface-3: #e8e5de;
+  --border: #e6e3dc;
+  --border-strong: #d4d0c7;
+  --text: #161615;
+  --text-muted: #76736d;
+  --text-faint: #a09c94;
+
+  /* Primary contrast (matte jet ink) & warm terracotta accent */
+  --ink: #161615;
+  --ink-hover: #2c2c2a;
+  --ink-contrast: #ffffff;
+
+  --accent: #df6142;
+  --accent-hover: #cb5133;
+  --accent-ink: #b94326;
+  --accent-soft: #fbece7;
+  --accent-line: #f3c8bc;
+
+  --brand: #161615;
+  --brand-hover: #2c2c2a;
+  --brand-ink: #df6142;
+  --brand-soft: #f3f1ec;
+  --brand-ring: rgb(223 97 66 / 22%);
+
+  /* Restrained, warm app accents */
+  --usa: #161615;
+  --mexico: #2d7a5f;
+  --nation: #df6142;
+
+  /* Semantic colours — flat matte tints, zero gloss */
+  --danger: #d94838;
+  --danger-ink: #a62c1e;
+  --danger-soft: #fcebe9;
+  --danger-line: #f2c4be;
+
+  --warning: #d97724;
+  --warning-ink: #8f4b10;
+  --warning-soft: #fdf2e4;
+  --warning-line: #f2d5b0;
+
+  --info: #8a867e;
+  --info-ink: #57544e;
+  --info-soft: #f1efe9;
+  --info-line: #e2dfd7;
+
+  --success: #2d8560;
+  --success-ink: #1d6245;
+  --success-soft: #e7f4ee;
+  --success-line: #bce1d0;
+
+  --pending: #df6142;
+  --pending-ink: #b54124;
+  --pending-soft: #fbece7;
+  --pending-line: #f3c8bc;
+
+  /* Soft diffuse elevation — never harsh or glossy */
+  --shadow-xs: 0 1px 2px rgb(22 22 21 / 3%);
+  --shadow-sm: 0 2px 10px rgb(22 22 21 / 4%), 0 1px 2px rgb(22 22 21 / 2%);
+  --shadow-md: 0 10px 30px -8px rgb(22 22 21 / 7%), 0 2px 8px rgb(22 22 21 / 3%);
+  --shadow-lg: 0 24px 56px -12px rgb(22 22 21 / 14%), 0 4px 14px rgb(22 22 21 / 5%);
+  --backdrop: rgb(22 22 21 / 42%);
+  --toast-bg: #161615;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0e;
+    --shell: #151514;
+    --surface: #1e1e1c;
+    --surface-2: #171715;
+    --surface-3: #282825;
+    --border: #2c2c28;
+    --border-strong: #3d3c37;
+    --text: #f2f0ea;
+    --text-muted: #9c9890;
+    --text-faint: #6e6b64;
+
+    --ink: #f2f0ea;
+    --ink-hover: #ffffff;
+    --ink-contrast: #161615;
+
+    --accent: #e56b4d;
+    --accent-hover: #ee7b5f;
+    --accent-ink: #f59c86;
+    --accent-soft: #311d18;
+    --accent-line: #5c3127;
+
+    --brand: #f2f0ea;
+    --brand-hover: #ffffff;
+    --brand-ink: #f08469;
+    --brand-soft: #262623;
+    --brand-ring: rgb(229 107 77 / 30%);
+
+    --usa: #f2f0ea;
+    --mexico: #52b792;
+    --nation: #e56b4d;
+
+    --danger: #eb6455;
+    --danger-ink: #f7a49b;
+    --danger-soft: #301917;
+    --danger-line: #5e2c27;
+
+    --warning: #e5933a;
+    --warning-ink: #f6bf80;
+    --warning-soft: #2f2213;
+    --warning-line: #5c401f;
+
+    --info: #8e8a82;
+    --info-ink: #c7c3ba;
+    --info-soft: #252522;
+    --info-line: #383733;
+
+    --success: #4bb387;
+    --success-ink: #86d9b5;
+    --success-soft: #152b22;
+    --success-line: #275440;
+
+    --pending: #e56b4d;
+    --pending-ink: #f6a38e;
+    --pending-soft: #311d18;
+    --pending-line: #5c3127;
+
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 30%);
+    --shadow-sm: 0 2px 10px rgb(0 0 0 / 35%);
+    --shadow-md: 0 12px 32px -8px rgb(0 0 0 / 50%);
+    --shadow-lg: 0 24px 60px -12px rgb(0 0 0 / 68%);
+    --backdrop: rgb(5 5 5 / 65%);
+    --toast-bg: #282825;
+  }
+}

@@ -1,0 +1,54 @@
+# Publishes config-manager/ to GitHub Pages.
+#
+# To use it, copy this file to .github/workflows/config-manager-pages.yml in the repository that
+# contains the config-manager/ folder, then set Settings > Pages > Source to "GitHub Actions".
+# It runs the unit tests, builds the site into config-manager/dist and deploys only that folder.
+name: Deploy Config Manager to GitHub Pages
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - 'config-manager/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deployment finish; a newer push waits behind it instead of cancelling it.
+concurrency:
+  group: config-manager-pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: config-manager
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test
+        run: npm test
+      - name: Build site
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: config-manager/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

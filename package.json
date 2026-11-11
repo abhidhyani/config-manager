@@ -1,0 +1,16 @@
+{
+  "name": "config-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static dashboard for managing string configurations of FOX One USA, FOX One Mexico and FOX Nation.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test \"tests/**/*.test.js\"",
+    "build": "node scripts/build-site.js",
+    "preview": "npm run build && python3 -m http.server 8081 --directory dist"
+  }
+}
