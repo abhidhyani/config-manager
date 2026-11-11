@@ -1,0 +1,105 @@
+.gitignore
+  s_7cfd622c6b258d::t_920b5bbfb5cdbd 1-2
+README.md
+  s_7cfd622c6b258d::t_81470298931ed9 1-231
+deploy/github-pages.yml
+  s_7cfd622c6b258d::t_8ed65dc437eafa 1-54
+package.json
+  s_7cfd622c6b258d::t_e5f5c7bcde758f 1-16
+scripts/build-site.js
+  s_7cfd622c6b258d::t_c3457f349c47cf 1-87
+src/analysis/AnalysisContext.js
+  s_8f7f87db07a7d5::t_63c5d4bf9dd7e1 1-48
+src/analysis/IssueTypes.js
+  s_8f7f87db07a7d5::t_f31d3e4895ab30 1-61
+src/analysis/analyzeCatalogs.js
+  s_8f7f87db07a7d5::t_c70b041a51c86a 1-45
+src/analysis/rules/environmentDrift.js
+  s_8f7f87db07a7d5::t_eeff8b267631f7 1-63
+src/analysis/rules/markup.js
+  s_8f7f87db07a7d5::t_96ff595abf7abf 1-38
+src/analysis/rules/missingKeys.js
+  s_8f7f87db07a7d5::t_9610a79b39be0e 1-29
+src/analysis/rules/placeholders.js
+  s_8f7f87db07a7d5::t_3b0af08202e58f 1-58
+src/analysis/rules/sourceFileRules.js
+  s_8f7f87db07a7d5::t_658ca6c8339405 1-70
+src/analysis/rules/translations.js
+  s_8f7f87db07a7d5::t_1a34ad0e5cd3e0 1-27
+src/analysis/rules/valueQuality.js
+  s_8f7f87db07a7d5::t_07ee97b5116fc7 1-125
+src/analysis/text/keys.js
+  s_8f7f87db07a7d5::t_d4f20f12ebebf8 1-42
+src/analysis/text/markup.js
+  s_8f7f87db07a7d5::t_9c8e6b92406cf8 1-42
+src/analysis/text/placeholders.js
+  s_8f7f87db07a7d5::t_acf9f64908982d 1-43
+src/app/AppRegistry.js
+  s_8f7f87db07a7d5::t_a0b7e3621f58c4 1-72
+src/app/filePaths.js
+  s_8f7f87db07a7d5::t_4d2dd2a4bc5003 1-30
+src/changes/ChangeValidator.js
+  s_8f7f87db07a7d5::t_147e3b25ebcb7e 1-77
+src/changes/PendingChanges.js
+  s_8f7f87db07a7d5::t_2f77b75720e81e 1-52
+src/changes/PendingChangesStorage.js
+  s_8f7f87db07a7d5::t_c3a4d424ce8602 1-36
+src/github/Base64Utf8.js
+  s_8f7f87db07a7d5::t_d93abf2aedbc1e 1-6
+src/github/GitHubClient.js
+  s_8f7f87db07a7d5::t_8f31ab34f3a77f 1-71
+src/github/GitHubError.js
+  s_8f7f87db07a7d5::t_dac275806ade47 1-95
+src/github/PullRequestPublisher.js
+  s_8f7f87db07a7d5::t_cb3932ede7b376 1-157
+src/github/RepositoryReader.js
+  s_8f7f87db07a7d5::t_17f816654a2b8e 1-45
+src/settings/PreferencesStore.js
+  s_8f7f87db07a7d5::t_cad3ef66f83a7a 1-42
+src/settings/SettingsDefaults.js
+  s_8f7f87db07a7d5::t_3a1c572ce9d8c4 1-18
+src/settings/TokenStore.js
+  s_8f7f87db07a7d5::t_6e94a8e149542f 1-45
+src/storage/BrowserStorage.js
+  s_8f7f87db07a7d5::t_5b95c54e99ade9 1-93
+src/strings/CatalogLoader.js
+  s_8f7f87db07a7d5::t_36885a987ff891 1-42
+src/strings/StringCatalog.js
+  s_8f7f87db07a7d5::t_f336912b8c960c 1-84
+src/strings/catalogParser.js
+  s_8f7f87db07a7d5::t_e21967a40cb2e0 1-117
+src/ui/SettingsView.js
+  s_7cfd622c6b258d::t_981babe2a4d440 1-306
+src/ui/dashboard/IssuesPanel.js
+  s_7cfd622c6b258d::t_3039d5a0772c71 1-101
+src/ui/dialogs/PullRequestDialog.js
+  s_7cfd622c6b258d::t_c3a5c9a6aad8d8 1-296
+src/ui/dialogs/StringEditorDialog.js
+  s_7cfd622c6b258d::t_a06b18ac2cbb88 1-299
+tests/build/buildSite.test.js
+  s_7cfd622c6b258d::t_37fe59b85ee7c5 1-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1ea3b5264dfb5caf5ff65a134e9cd703c8c9a9a5",
+  "prompts": {},
+  "sessions": {
+    "s_7cfd622c6b258d": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bdba7daa-25d9-428b-9d15-db5936ae1501",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Abhishek Dhyani <abhishek.dhyani@fox.com>"
+    },
+    "s_8f7f87db07a7d5": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4c63fdf1-a8ba-4b5f-b24e-f38d371cfd08",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Abhishek Dhyani <abhishek.dhyani@fox.com>"
+    }
+  }
+}
