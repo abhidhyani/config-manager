@@ -1,15 +1,10 @@
-# Publishes config-manager/ to GitHub Pages.
-#
-# To use it, copy this file to .github/workflows/config-manager-pages.yml in the repository that
-# contains the config-manager/ folder, then set Settings > Pages > Source to "GitHub Actions".
-# It runs the unit tests, builds the site into config-manager/dist and deploys only that folder.
+# Publishes the site to GitHub Pages.
+# Set Settings > Pages > Source to "GitHub Actions".
 name: Deploy Config Manager to GitHub Pages
 
 on:
   push:
     branches: [develop]
-    paths:
-      - 'config-manager/**'
   workflow_dispatch:
 
 permissions:
@@ -21,10 +16,6 @@ permissions:
 concurrency:
   group: config-manager-pages
   cancel-in-progress: false
-
-defaults:
-  run:
-    working-directory: config-manager
 
 jobs:
   build:
@@ -41,7 +32,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: config-manager/dist
+          path: dist
 
   deploy:
     needs: build
